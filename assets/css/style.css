@@ -26,8 +26,8 @@ h1 {
 nav {
     display: flex;
     background-color: var(--seconday-color);
-    color: var(--primary-color);  
-    flex-direction: row;
+    color: var(--primary-color);
+    justify-content:space-evenly;
     align-items: center;
     font-size: 32px;
     padding: 16px;  
@@ -35,31 +35,56 @@ nav {
 
 ul, a {
     background-color: var(--seconday-color);
-    color: var(--primary-color);      
+    color: var(--primary-color);
+    text-decoration: none;      
 }
 
 li {
     display: inline-block;
     flex-wrap: wrap;
+    margin: 16px;
+}
+
+section {
+    width: 75%;
+    float: right;
+    height: 100%;
+
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     padding: 20px;
-    clear: both;
     float: left;
     width: 20%;
     height: 100%;
-    background-color: var(--seconday-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--seconday-color);
     text-align: right;
     font-size: 32px;
 }
 
 aside h2 {
-background-color: var(--seconday-color);
+background-color: var(--primary-color);
 }
 
 h2, p {
     padding: 16px;
+}
+
+header img {
+    height: 220px;
+    width:auto;
+}
+
+section img {
+    border: 16px, solid, var(--seconday-color),
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
